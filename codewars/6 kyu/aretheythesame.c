@@ -6,7 +6,7 @@ squared, regardless of the order.*/
 #include <stdlib.h>
 #include <stdio.h>
 bool comp(const int a[/*n*/], const int b[/*n*/], size_t n)
-{
+{ //www
   int length_a = sizeof(*a)/sizeof(a[0]);
   int length_b = sizeof(*b)/sizeof(b[0]);
   printf("%i %i \n", length_a, length_b);
