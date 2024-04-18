@@ -1,5 +1,4 @@
 #include <stdbool.h>
-
 bool is_prime(int num)
 {
   if(num > 2){
