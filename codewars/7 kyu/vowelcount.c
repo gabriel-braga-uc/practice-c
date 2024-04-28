@@ -4,12 +4,16 @@
 
 int main(){
     char * s = "Testando";
-    char * vowels = "abcdeABCDE";
-    size_t l;
+    char * vowels = "aeiouAEIOU";
+    int awns = 0;
     for(int i = 0; s[i] != '\0'; i++){
-        l++;
+        for(int j = 0; vowels[j] != '\0'; j++){
+            if(s[i] == vowels[j]){
+                awns++;
+                break;
+            }
+        }
     }
-    printf("%d", l);
-    printf("%s", s);
+    printf("%d", awns);
     return 0;
 }
